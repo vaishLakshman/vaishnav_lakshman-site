@@ -7,7 +7,6 @@ import PixelCard, { PixelCardType } from "../Card/PixelCard";
 // import { DotButton, useDotButton } from "./ECDotButtons";
 
 type PropType = {
-  // slides: number[];
   slides: PixelCardType[];
   options?: EmblaOptionsType;
 };
@@ -31,7 +30,6 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
             <div className="embla__slide w-[25rem]" key={index}>
               <PixelCard
                 key={asset.key}
-                type={asset.type}
                 asset={asset.asset}
                 title={asset.title}
                 desc={asset.desc}
