@@ -10,14 +10,12 @@ const LandingPageData = () => {
   return (
     <div className="landing-container relative overflow-auto h-full">
       <div className="mx-7 my-26">
-        <h1 className="font-jersey-lg text-8xl">
-          Vaishnav Lakshman
-        </h1>
+        <h1 className="font-jersey-lg text-8xl">Vaishnav Lakshman</h1>
         <div className="flex gap-2 font-jersey-lg ml-2 text-sub-head text-lg">
           <p>&gt;</p>
           <p>
-            analyse_Data // think_Creatively // build_Websites // design_Visuals
-            // solve_Problems
+            analyse_Data &#47;&#47; think_Creatively &#47;&#47; build_Websites
+            &#47;&#47; design_Visuals &#47;&#47; solve_Problems
           </p>
         </div>
       </div>
@@ -58,6 +56,8 @@ const LandingPage = ({ theme }: PageType) => {
       peep1={peep1}
       peep2={peep2}
       data={LandingPageData()}
+      peep1_position={undefined}
+      peep2_position={undefined}
     />
   );
 };

@@ -6,6 +6,7 @@ import light from "../../../public/assets/light_mode.png";
 
 interface NavBarType {
   theme: boolean;
+  // eslint-disable-next-line
   setTheme: any;
 }
 const NavBar = ({ theme, setTheme }: NavBarType) => {

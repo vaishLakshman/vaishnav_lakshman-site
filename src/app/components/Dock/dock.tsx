@@ -1,14 +1,22 @@
 import Image from "next/image";
 import dockList from "../../data/socials";
 
+interface DockType {
+  key: number;
+  // eslint-disable-next-line
+  icon: any;
+  url: string;
+  alt_text: string;
+}
+
 const Dock = () => {
-  let cols = dockList.length;
+  const cols = dockList.length;
   return (
     <div
       className={`dock-container pt-4 grid grid-flow-col grid-cols-${cols} gap-5`}
     >
       {dockList &&
-        dockList.map((item: any, index) => (
+        dockList.map((item: DockType, index: number) => (
           <a
             href={item.url}
             key={index}

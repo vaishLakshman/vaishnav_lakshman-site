@@ -1,14 +1,15 @@
-import peep1 from "../../public/Guy sitting.svg";
-import peep2 from "../../public/Girl standing.svg";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
 interface BaseTemplateType {
   theme: boolean;
+  // eslint-disable-next-line
   peep1: any | undefined;
+  // eslint-disable-next-line
   peep2: any | undefined;
   peep1_position: string | undefined;
   peep2_position: string | undefined;
+  // eslint-disable-next-line
   data: any;
 }
 
@@ -42,7 +43,7 @@ export default function BaseTemplate({
     } else {
       setP2_pos("");
     }
-  }, [theme]);
+  }, [theme, peep1_position, peep2_position]);
 
   return (
     <div className={`flex  w-full border-b-2 border-b-gray-100 h-screen ${bg}`}>

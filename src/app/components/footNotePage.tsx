@@ -19,7 +19,7 @@ const FootNoteData = () => {
           className="mx-auto underline underline-offset-2"
           target="blank"
         >
-          <p>I'd love to hear from you.</p>
+          <p>I&apos;d love to hear from you.</p>
         </a>
       </div>
       <div className="credits">
@@ -56,6 +56,8 @@ const FooterPage = ({ theme }: PageType) => {
       peep1={undefined}
       peep2={undefined}
       data={FootNoteData()}
+      peep1_position={undefined}
+      peep2_position={undefined}
     />
   );
 };

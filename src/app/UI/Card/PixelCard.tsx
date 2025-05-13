@@ -1,10 +1,8 @@
-"use client";
-
 import Image from "next/image";
-import { useEffect, useState } from "react";
 
 export interface PixelCardType {
   key: number;
+  // eslint-disable-next-line
   asset: any;
   title: string;
   desc: string;

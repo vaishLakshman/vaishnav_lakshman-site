@@ -22,9 +22,9 @@ const pixelsData = () => {
         </p>
         <br />
         <p>
-          With a Pandemic-break & a cracked version of Photoshop(don't judge!),
-          I ended up creating a few works of my own. You guys can be the judge
-          of my artistic skills. :){" "}
+          With a Pandemic-break & a cracked version of Photoshop(don&apos;t
+          judge!), I ended up creating a few works of my own. You guys can be
+          the judge of my artistic skills. :){" "}
         </p>
       </div>
       <div className="carousal-container relative">
@@ -47,6 +47,8 @@ const PixelArt = ({ theme }: PageType) => {
       peep1={undefined}
       peep2={peep2}
       data={pixelsData()}
+      peep1_position={undefined}
+      peep2_position={undefined}
     />
   );
 };
