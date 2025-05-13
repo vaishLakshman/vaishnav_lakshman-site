@@ -1,33 +1,28 @@
-import pic from "../../../public/assets/pixelcafe.gif";
+import cafe from "../../../public/assets/pixelcafe.gif";
+import ghost from "../../../public/assets/ghost.gif";
+import muthappan from "../../../public/assets/muthappan.png";
 
 const assetList = [
   {
     key: 0,
-    asset: pic,
+    asset: cafe,
     title: "café de rêve",
     desc: "A cafe in a wonderland.",
-    created_on: "07/06/2021",
+    created_on: "07/06/2020",
   },
   {
     key: 1,
-    asset: pic,
-    title: "Title2",
-    desc: "This is a description2",
-    created_on: "03/05/2024",
+    asset: ghost,
+    title: "Lone Soul",
+    desc: "A harmless soul(literally) is done being bored.",
+    created_on: "30/10/2021",
   },
   {
     key: 2,
-    asset: pic,
-    title: "Title3",
-    desc: "This is a description3",
-    created_on: "04/05/2024",
-  },
-  {
-    key: 2,
-    asset: pic,
-    title: "Title4",
-    desc: "This is a description4",
-    created_on: "05/05/2024",
+    asset: muthappan,
+    title: "Muthappan",
+    desc: "Friendly neighbourhood god",
+    created_on: "13/05/2025",
   },
 ];
 

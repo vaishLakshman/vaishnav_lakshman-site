@@ -28,7 +28,7 @@ const NavBar = ({ theme, setTheme }: NavBarType) => {
         }}
       >
         <Image
-          className="opacity-75"
+          className="opacity-20 hover:opacity-50"
           src={image}
           alt="dark mode image"
           height={30}

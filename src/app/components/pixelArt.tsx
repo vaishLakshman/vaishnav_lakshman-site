@@ -18,13 +18,13 @@ const pixelsData = () => {
         <p>
           I have always been fan of art, in all its forms. Amongst the plethora
           of art forms that I enjoy, one that really got my attention was{" "}
-          <b>Pixel Art</b> - Classic, simple yet stunning.
-          <br />
-          <p>
-            With a Pandemic-break & a cracked version of Photoshop(don't
-            judge!), I ended up creating a few works of my own. You guys can be
-            the judge of my artistic skills. :){" "}
-          </p>
+          <b>Pixel Art</b> - Classic, simple yet stunning.{" "}
+        </p>
+        <br />
+        <p>
+          With a Pandemic-break & a cracked version of Photoshop(don't judge!),
+          I ended up creating a few works of my own. You guys can be the judge
+          of my artistic skills. :){" "}
         </p>
       </div>
       <div className="carousal-container relative">
