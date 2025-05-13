@@ -30,7 +30,7 @@ const FootNoteData = () => {
           Vaishnav Lakshman
         </h3>
       </div>
-      <div className="dock h-[12rem]">
+      <div className="dock h-3/13">
         <Dock />
       </div>
       <div className="tech-credits font-body-text text-xs opacity-75 bottom-0">

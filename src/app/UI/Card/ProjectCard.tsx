@@ -8,12 +8,12 @@ export interface ProjectCardType {
 const ProjectCard = ({ index, title, desc, url }: ProjectCardType) => {
   return (
     <div className="project-card-container bg-gray-300 w-full h-1/3 py-3 px-5 my-5 rounded-xl">
-      <div className="head flex gap-3 font-jersey-sm text-3xl">
+      <div className="head flex gap-3 font-jersey-sm text-3xl text-black">
         <p>{index + 1}.</p>
         <a
           href={url}
           target="blank"
-          className="hover:underline underline-offset-2"
+          className="hover:underline underline-offset-2 "
         >
           {title}
         </a>

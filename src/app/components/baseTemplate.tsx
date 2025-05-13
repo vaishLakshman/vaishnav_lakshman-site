@@ -46,7 +46,7 @@ export default function BaseTemplate({
   }, [theme, peep1_position, peep2_position]);
 
   return (
-    <div className={`flex  w-full border-b-2 border-b-gray-100 h-screen ${bg}`}>
+    <div className={`flex  w-full h-screen ${bg}`}>
       <div className={`left-pane w-2/6 content-end ${p1_pos}`}>
         {peep1 && (
           <div className={`image-holder w-fit mx-auto mb-7`}>
