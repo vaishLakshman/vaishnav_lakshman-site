@@ -1,29 +1,39 @@
-import Image from "next/image";
 import dockList from "../../data/socials";
+interface DockTheme {
+  theme?: boolean;
+}
 
-interface DockType {
+interface DockListType {
   key: number;
-  // eslint-disable-next-line
-  icon: any;
+  path?: string;
   url: string;
   alt_text: string;
 }
 
-const Dock = () => {
+const Dock = ({ theme }: DockTheme) => {
   const cols = dockList.length;
   return (
     <div
-      className={`dock-container bg-gray-100 mt-3 py-4 px-2 rounded-2xl  grid grid-flow-col grid-cols-${cols} gap-5`}
+      className={`dock-container  mt-3 py-4 px-2 rounded-2xl items-center  grid grid-flow-col grid-cols-${cols} gap-5`}
     >
       {dockList &&
-        dockList.map((item: DockType, index: number) => (
+        dockList.map((item: DockListType, index: number) => (
           <a
             href={item.url}
             key={index}
             target="blank"
-            className="opacity-100 cursor-pointer mx-3 hover:scale-110 hover:opacity-75"
+            className="opacity-100 cursor-pointer mx-3 hover:scale-110 hover:opacity-75 duration-300 ease-in-out"
           >
-            <Image src={item.icon} alt={item.alt_text} height={30} width={30} />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill={theme ? `#ededed` : `#141414`}
+              viewBox="0 0 24 24"
+              width="25"
+              height="25"
+              preserveAspectRatio="xMidYMid meet"
+            >
+              <path d={item.path} />
+            </svg>
           </a>
         ))}
     </div>

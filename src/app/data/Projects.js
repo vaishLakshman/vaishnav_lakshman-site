@@ -1,9 +1,14 @@
+import vent from "../../../public/assets/vent.png";
+
 const ProjectsList = [
   {
     index: 0,
-    title: "IMDb Top 1000 Movies - SQL Metrics & KPIs Analysis",
-    desc: "Analysis of top 1000 IMDb-rated movies to extract insights on genres, ratings, directors, and revenue using SQL.",
-    url: "https://github.com/vaishLakshman/IMDb_top_1000_Movies",
+    title: "Vent-It-Out : Say it and let go",
+    desc: "A simple, calming space to help you open up and feel lighter. Nothing stored, nothing saved, just a private moment of release.",
+    url: "",
+    image: vent,
+    //Dummy Field
+    theme: false,
   },
 ];
 

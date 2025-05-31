@@ -7,17 +7,19 @@ import FooterPage from "./components/footNotePage";
 import PixelArt from "./components/pixelArt";
 import LandingPage from "./components/landingPage";
 import Projects from "./components/projectsPage";
+import Credits from "./components/credits";
 
 export default function Home() {
   const [theme, setTheme] = useState(false);
-  console.log("check", theme);
+
   return (
     <div className={`text-${theme ? "white" : "black"}`}>
       <NavBar theme={theme} setTheme={setTheme} />
       <LandingPage theme={theme} />
-      <PixelArt theme={theme} />
       <Projects theme={theme} />
+      <PixelArt theme={theme} />
       <FooterPage theme={theme} />
+      <Credits theme={theme} />
     </div>
   );
 }

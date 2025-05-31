@@ -76,8 +76,8 @@
   color: var(--detail-high-contrast);
 }
 .embla__button__svg {
-  width: 35%;
-  height: 35%;
+  width: 30%;
+  height: 30%;
 }
 .embla__dots {
   display: flex;

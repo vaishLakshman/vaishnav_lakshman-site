@@ -12,7 +12,7 @@ export interface PixelCardType {
 const PixelCard = ({ asset, title, desc, created_on }: PixelCardType) => {
   return (
     <div className="card-container size-fit mx-auto relative cursor-pointer">
-      <div className="img-container size-[25rem] overflow-hidden rounded-4xl">
+      <div className="img-container size-[12rem] lg:size-[25rem] overflow-hidden rounded-4xl">
         <Image
           className="object-fill"
           src={asset}
@@ -23,7 +23,7 @@ const PixelCard = ({ asset, title, desc, created_on }: PixelCardType) => {
         />
       </div>
 
-      <div className="desc-container absolute inset-0 size-[25rem] text-white rounded-4xl opacity-0 bg-white/20 backdrop-blur-md hover:opacity-100">
+      <div className="desc-container absolute inset-0 lg:size-[25rem] text-white rounded-4xl opacity-0 bg-black/50 backdrop-blur-md hover:opacity-100">
         <div className="relative  mx-5 my-20 grid grid-flow-col grid-rows-3 ">
           <h2 className="text-5xl font-jersey-sm">{title}</h2>
           <p className="h-24 font-jersey-sm text-2xl">

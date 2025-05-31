@@ -23,13 +23,13 @@ const NavBar = ({ theme, setTheme }: NavBarType) => {
   return (
     <div className="relative w-full h-fit z-100">
       <div
-        className="icon-holder  fixed mr-7 mt-2 w-fit h-fit p-1 rounded-lg right-0 cursor-pointer"
+        className="icon-holder absolute mr-2 mt-3 lg:mr-5 lg:mt-3 p-1 rounded-lg right-0 cursor-pointer"
         onClick={() => {
           setTheme(!theme);
         }}
       >
         <Image
-          className="opacity-20 hover:opacity-50"
+          className="opacity-50 lg:opacity-30 hover:opacity-70 hover:rotate-15 hover:scale-105"
           src={image}
           alt="dark mode image"
           height={30}

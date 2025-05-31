@@ -6,20 +6,26 @@ export interface PageType {
   theme: boolean;
 }
 
-const LandingPageData = () => {
+const LandingPageData = (theme: boolean) => {
   return (
-    <div className="landing-container relative overflow-auto h-full">
-      <div className="mx-7 my-26">
-        <h1 className="font-jersey-lg text-8xl">Vaishnav Lakshman</h1>
-        <div className="flex gap-2 font-jersey-lg ml-2 text-sub-head text-lg">
+    <div className="landing-container relative h-fit lg:pb-5">
+      <div className="pt-20 lg:p-0 mb-12 lg:my-20 ">
+        <h1 className="font-jersey-lg ml-3 lg:ml-0 text-7xl lg:text-8xl tracking-wide">
+          <a href="/">Vaishnav Lakshman</a>
+        </h1>
+        <div className="flex gap-2 font-jersey-lg lg:ml-2 text-sub-head opacity-70 text-base lg:text-xl">
           <p>&gt;</p>
           <p>
-            analyse_Data &#47;&#47; think_Creatively &#47;&#47; build_Websites
-            &#47;&#47; design_Visuals &#47;&#47; solve_Problems
+            creative_Thinking &#47;&#47; website_Building &#47;&#47;
+            visual_Designing &#47;&#47; problem_Solving
           </p>
         </div>
       </div>
-      <div className="writeup-container font-body-text text-dark-text">
+      <div
+        className={`writeup-container text-sm lg:text-lg font-body-text ${
+          theme ? "text-light-text" : "text-dark-text"
+        } text-justify lg:text-left`}
+      >
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
         dignissimos commodi unde dolore sunt. Nam illo iste laudantium delectus
         nemo. Blanditiis, temporibus. Quos earum perspiciatis aspernatur vel
@@ -55,9 +61,7 @@ const LandingPage = ({ theme }: PageType) => {
       theme={theme}
       peep1={peep1}
       peep2={peep2}
-      data={LandingPageData()}
-      peep1_position={undefined}
-      peep2_position={undefined}
+      data={LandingPageData(theme)}
     />
   );
 };

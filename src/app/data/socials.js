@@ -1,32 +1,21 @@
-import linkedin from "../../../public/assets/linkedin.svg";
-import github from "../../../public/assets/github.svg";
-import instagram from "../../../public/assets/instagram.svg";
-import gmail from "../../../public/assets/gmail.svg";
-
 const dockList = [
   {
     key: 0,
-    icon: linkedin,
     url: "https://www.linkedin.com/in/vaishnavlakshman4051/",
     alt_text: "Linkedin",
+    path: "M4.98 3.5a2.5 2.5 0 1 1-5 .01 2.5 2.5 0 0 1 5-.01zM.5 8.5h4v13h-4v-13zM8.5 8.5h3.6v1.8h.05c.5-.95 1.73-1.95 3.55-1.95 3.8 0 4.5 2.5 4.5 5.75v7.4h-4v-6.55c0-1.56-.03-3.55-2.15-3.55-2.15 0-2.48 1.68-2.48 3.42v6.68h-4v-13z",
   },
   {
     key: 1,
-    icon: github,
     url: "https://github.com/vaishLakshman",
     alt_text: "Github",
+    path: "M12 1.5C5.73 1.5.5 6.74.5 13.02c0 5.1 3.29 9.42 7.85 10.96.57.11.78-.25.78-.55v-2.04c-3.2.7-3.88-1.54-3.88-1.54-.52-1.31-1.28-1.66-1.28-1.66-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.76 2.71 1.25 3.37.96.1-.75.4-1.25.73-1.53-2.56-.29-5.25-1.28-5.25-5.68 0-1.25.45-2.27 1.2-3.07-.12-.3-.52-1.5.11-3.13 0 0 .98-.31 3.2 1.18.94-.26 1.94-.4 2.93-.4.99 0 1.99.14 2.93.4 2.2-1.49 3.18-1.18 3.18-1.18.63 1.63.23 2.83.11 3.13.75.8 1.2 1.82 1.2 3.07 0 4.41-2.7 5.39-5.27 5.67.41.36.77 1.09.77 2.2v3.27c0 .31.2.67.79.55 4.56-1.54 7.84-5.86 7.84-10.96C23.5 6.74 18.26 1.5 12 1.5z",
   },
   {
     key: 2,
-    icon: instagram,
     url: "https://www.instagram.com/vaishnavlakshman/",
     alt_text: "Instagram",
-  },
-  {
-    key: 3,
-    icon: gmail,
-    url: "https://mail.google.com/mail/?view=cm&fs=1&to=vaishnavlakshman7@gmail.com",
-    alt_text: "Gmail",
+    path: "M7.5 2C4.46 2 2 4.46 2 7.5v9C2 19.54 4.46 22 7.5 22h9c3.04 0 5.5-2.46 5.5-5.5v-9C22 4.46 19.54 2 16.5 2h-9zm0 2h9c1.93 0 3.5 1.57 3.5 3.5v9c0 1.93-1.57 3.5-3.5 3.5h-9C5.57 20 4 18.43 4 16.5v-9C4 5.57 5.57 4 7.5 4zm4.5 2.75A5.75 5.75 0 1 0 17.75 12 5.76 5.76 0 0 0 12 6.75zm0 2A3.75 3.75 0 1 1 8.25 12 3.75 3.75 0 0 1 12 8.75zm5-3a1 1 0 1 0 1 1 1 1 0 0 0-1-1z",
   },
 ];
 
